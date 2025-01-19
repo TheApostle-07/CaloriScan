@@ -4,6 +4,16 @@
 
 ![CaloriesScanner Web Image](URL_TO_YOUR_IMAGE)  
 
+
+---
+
+## 🌐 Live Demo  
+
+🎉 **Experience CaloriesScanner in action!** Click the link below to explore the live version of our project:  
+[🚀 **CaloriesScanner - Live Demo**](INSERT_YOUR_DEPLOY_LINK_HERE)  
+
+---
+
 # 👩‍💻 Contributors
 ### This project was created by:
 - **Rufus Bright** (Group Leader)
@@ -38,11 +48,6 @@
   - Google Vision API for text and image recognition  
   - OpenAI API for detailed food analysis and insights  
   - Object Detection for ingredient identification  
-
-### Updates in This Version:
-1. **Web Image**: Add an image URL for a project banner or screenshot (`![CaloriesScanner Web Image](URL_TO_YOUR_IMAGE)`).
-2. **Deploy Link**: Added a placeholder for the live demo URL (`[CaloriesScanner - Live Demo](INSERT_YOUR_DEPLOY_LINK_HERE)`).
-
 
 
 ---
