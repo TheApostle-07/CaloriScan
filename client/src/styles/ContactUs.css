@@ -1,0 +1,177 @@
+.contact-us {
+    padding: 60px 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1b1b1b, #1b1b1b);
+    color: #fff;
+  }
+  
+  .contact-title {
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  
+  .contact-text {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    color: #d9d9d9;
+    margin: 10px 0;
+  }
+  
+  .team-title {
+    font-size: clamp(2rem, 3vw, 2.3rem);
+    color: #f3ecec;
+    margin: 50px 0 30px;
+    text-transform: capitalize;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center; /* Centers cards horizontally */
+  }
+  
+  .horizontal-card {
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1b1b1b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .horizontal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  }
+  
+  .image-container {
+    width: 40%; /* Horizontal layout - 40% for image */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .horizontal-card:hover .image-container img {
+    transform: scale(1.1);
+  }
+  
+  .content-container {
+    padding: 20px;
+    width: 60%; /* Horizontal layout - 60% for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .content-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .content-container .role {
+    font-size: 1.2rem;
+    color: #d9d9d9;
+    margin-bottom: 10px;
+  }
+  
+  .content-container .quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #a9a9a9;
+    margin-bottom: 5px;
+  }
+  
+  .content-container .verse {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #d9d9d9;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  
+  .content-container .portfolio-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #00a8e8, #fca311);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .content-container .portfolio-link:hover {
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #fca311, #00a8e8);
+    transform: scale(1.05);
+  }
+  
+  .content-container .icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  
+  .content-container .icons a {
+    color: #d9d9d9;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .content-container .icons a:hover {
+    color: #fca311;
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Styling for Vertical Cards */
+  @media (max-width: 768px) {
+    .horizontal-card {
+      flex-direction: column; /* Change to vertical layout */
+      max-width: 100%; /* Take full width */
+      gap: 10px;
+    }
+  
+    .image-container {
+      width: 100%; /* Full width for the image */
+    }
+  
+    .content-container {
+      width: 100%; /* Full width for the content */
+      padding: 15px; /* Adjust padding for smaller screens */
+      text-align: center; /* Center align text */
+    }
+    .verse
+    {
+        text-align: center;
+    }
+  
+    .content-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .content-container .role,
+    .content-container .quote,
+    .content-container .verse {
+      font-size: 1rem; /* Adjust font size */
+      text-align: center;
+    }
+  }

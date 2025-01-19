@@ -1,0 +1,258 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000; /* Dominant black background */
+    color: #fff; /* White text for visibility */
+    
+  }
+  
+  .calorie-identify {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures all content is centered */
+    justify-content: center; /* Centers content vertically */
+  }
+  
+  .calorie-identify h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fca311; /* Vibrant title color */
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2); /* Add subtle glow */
+  }
+  
+  .dish-details {
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #fca311; /* Match branding color */
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%; /* Ensure it stretches on small screens */
+    background-color: #1a1a1a; /* Slightly lighter black */
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.1); /* Enhance depth */
+  }
+  
+  .dish-details h2 {
+    font-size: 1.8rem;
+    color: #e63946; /* Standout heading for dish name */
+    margin-bottom: 15px;
+  }
+  
+  .dish-details h3 {
+    font-size: 1.2rem;
+    color: #007ea7;
+    margin-bottom: 10px;
+  }
+  
+  .dish-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dish-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .dish-details .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Proper button spacing */
+  }
+  
+  .dish-details .quantity-controls button {
+    background-color: #fca311; /* Vibrant orange for action */
+    color: #000;
+    border: 2px solid #fca311;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Enhance button depth */
+  }
+  
+  .dish-details .quantity-controls button:hover {
+    background-color: #e63946; /* Red hover feedback */
+    color: #fff;
+    border-color: #e63946;
+    transform: scale(1.1); /* Subtle scaling effect */
+  }
+
+  /* Total Calories Section */
+.total-calories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #1a1a1a; /* Match background consistency */
+    border: 2px solid #fca311; /* Vibrant border to highlight importance */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #fff; /* Ensure readability */
+    font-size: 1.5rem; /* Larger font for emphasis */
+    font-weight: bold; /* Bold text for visibility */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Slight hover effect to make it interactive */
+  .total-calories:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Calories Value */
+  .calorie-value {
+    color: #e63946; /* Highlight calories in a vibrant red */
+    font-weight: 700; /* Make the value stand out */
+  }
+  
+  .calorie-meter {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e63946; /* Red for High calorie level */
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .not-recommended {
+    color: #e63946; /* Bright red for attention */
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #fca311;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Add hover depth */
+  }
+ 
+  button:hover {
+    background-color: #e63946;
+    color: #fff;
+    transform: scale(1.05); /* Slight hover scaling */
+  }
+  /* Image Styling */
+.dish-image {
+    width: 80%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  
+  .ingredient-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .ingredient-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+  
+  /* Total Calories */
+  .total-calories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #fca311;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  @media (max-width: 768px) {
+    .dish-details {
+      padding: 20px;
+      max-width: 90%; /* Ensures it doesn't shift on smaller screens */
+      
+    }
+
+  
+    .calorie-identify h1 {
+      font-size: 2rem;
+    }
+  
+    .dish-details h2 {
+      font-size: 1.6rem;
+    }
+  
+    .dish-details h3 {
+      font-size: 1rem;
+    }
+  
+    .dish-details .quantity-controls button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+
+  .no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Ensures full vertical height */
+    padding: 20px; /* Adds some padding around the content */
+    background-color: #000; /* Adjust background color if needed */
+  }
+  
+  .no-data h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .no-data p {
+    margin-bottom: 20px;
+    color: #ccc;
+    font-size: 1.2rem;
+  }
+  
+  .no-data button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fca311;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .no-data button:hover {
+    background-color: #e68a00;
+  }
+  
+  .no-data button:focus {
+    outline: none;
+  }

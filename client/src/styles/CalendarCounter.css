@@ -1,0 +1,122 @@
+.qr-scanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    font-family: "Poppins", sans-serif;
+    padding: 0 20px; /* Padding for responsiveness */
+    box-sizing: border-box; /* Consistent box model */
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center; /* Centers the text */
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #d9d9d9;
+    margin-bottom: 30px;
+    text-align: center; /* Centers the subtitle */
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  .calendar-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    background: #1b1b1b; /* Dark background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px 20px; /* Consistent padding */
+    width: 90%; /* Adjusts width for smaller screens */
+    max-width: 400px; /* Fixed maximum width */
+    margin: 0 auto; /* Horizontally centers the counter */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    text-align: center; /* Centers text inside */
+  }
+  
+  .token-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    background: #ffffff; /* White background for contrast */
+    color: #000000; /* Black text */
+    padding: 30px 40px; /* Spacing around content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .token-day span {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px; /* Space between number and text */
+  }
+  
+  .token-day p {
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  
+  .actions {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    gap: 20px; /* Spacing between buttons */
+    margin-top: 30px;
+    justify-content: center; /* Centers the buttons horizontally */
+  }
+  
+  .btn-scan,
+  .btn-detect {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-scan:hover,
+  .btn-detect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn-scan:focus,
+  .btn-detect:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #ffffff;
+  }
+  
+  footer {
+    margin-top: 30px; /* Space above footer */
+    text-align: center; /* Centers footer content */
+    color: #d9d9d9;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #ffffff; /* Footer link color */
+    text-decoration: none;
+    margin: 0 10px; /* Spacing between links */
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  

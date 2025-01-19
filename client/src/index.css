@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css');
+
+:root {
+  /* Primary Colors */
+  --rich-black: #000000;
+  --prussian-blue: #003459;
+  --cerulean-blue: #007EA7;
+
+  /* Secondary Colors */
+  --platinum: #E5E5E5;
+  --white: #FFFFFF;
+  --soft-gray: #D9D9D9;
+
+  /* Accent Colors */
+  --orange-web: #FCA311;
+  --forest-green: #2ECC71;
+  --sunset-red: #E74C3C;
+  --vivid-purple: #8A2BE2;
+
+  /* Gradients */
+  --achievement-gradient: linear-gradient(90deg, #2ECC71, #8A2BE2);
+  --cta-gradient: linear-gradient(135deg, #FCA311, #FF9800);
+
+  /* Font Families */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+
+  /* Shadows */
+  --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: var(--font-primary);
+  background-color: var(--rich-black);
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: var(--text-shadow);
+}
+
+p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+button {
+  font-family: var(--font-secondary);
+  background: var(--white);
+  color: var(--rich-black);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: var(--platinum);
+  color: var(--white);
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-2px);
+}
+
+a {
+  color: var(--cerulean-blue);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Global Section Styles */
+section {
+  padding: 10px 50px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
 }

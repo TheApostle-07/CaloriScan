@@ -1,0 +1,218 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--rich-black); /* Dominating black */
+  color: var(--white); /* Important things in white */
+  font-family: var(--font-primary);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and hamburger */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo (on the left) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar-brand h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin: 0;
+  color: var(--white); /* Branding in white */
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.2s ease;
+}
+
+.navbar-brand h1:hover {
+  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.6); /* Glow effect */
+}
+
+/* Hamburger Menu (on the right) */
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* Hidden on larger screens */
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-left: 170px; /* Ensures it's on the right */
+}
+
+.hamburger:hover {
+  transform: rotate(90deg); /* Adds interactivity */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white); /* Important links in white */
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  gap: 8px; /* Add space between icon and text */
+
+}
+
+.navbar-links a:hover {
+  background-color: var(--white); /* White hover for focus */
+  color: var(--rich-black); /* Contrast switch */
+  transform: scale(1.1); /* Slight scaling for hover effect */
+}
+
+/* Active Link */
+.active {
+  background-color: var(--white); /* Highlight background */
+  color: var(--rich-black) !important; /* Ensure text is black */
+  font-weight: 600; /* Emphasize the active link */
+  border-radius: 8px;
+  padding: 8px 15px; /* Maintain consistent padding */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Inactive Link */
+.inactive {
+  color: var(--white);
+}
+
+/* Mobile-Friendly Styles (Phones) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on smaller screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: var(--rich-black); /* Keep background consistent */
+    padding: 20px;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2); /* Subtle shadow */
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dish-details {
+    padding: 15px;
+    max-width: 90%;
+    margin: 0 auto; /* Center content */
+  }
+
+  .calorie-identify h1 {
+    font-size: 2rem;
+  }
+
+  .dish-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .dish-details h3 {
+    font-size: 1rem;
+  }
+
+  .dish-details .quantity-controls button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+/* Tablet-Friendly Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-links {
+    flex-direction: row; /* Keep links in a row for tablets */
+    position: static;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    background-color: transparent; /* Remove background color */
+    box-shadow: none; /* Remove shadow */
+    padding: 0; /* Reset padding */
+    gap: 20px; /* Add spacing between links */
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu on tablets */
+  }
+
+  .dish-details {
+    max-width: 80%; /* Slightly larger container for tablets */
+    padding: 20px;
+    margin: 0 auto; /* Center content */
+  }
+
+  .calorie-identify h1 {
+    font-size: 2.2rem; /* Slightly larger title */
+  }
+
+  .dish-details h2 {
+    font-size: 1.6rem; /* Adjust font size for tablets */
+  }
+
+  .dish-details h3 {
+    font-size: 1.1rem; /* Slightly smaller subheading */
+  }
+
+  .dish-details .quantity-controls button {
+    font-size: 1rem; /* Adjust button size for better visibility */
+    padding: 10px 15px;
+  }
+}
+
+/* Smooth Menu Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
