@@ -16,7 +16,7 @@
 
 # 👩‍💻 Contributors
 ### This project was created by:
-- **Rufus Bright** (Group Leader)
+- **Rufus Bright** (Team Lead)
 - **Shivam Kumar Singh**
 - **Dubey Arpitkumar Shreesurendranath**
 - **Gulshan Nagar**
