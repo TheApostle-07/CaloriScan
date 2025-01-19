@@ -2,7 +2,7 @@
 
 **Track Calories, Nutrients, and Minerals Effortlessly with AI!**  
 
-![CaloriesScanner Web Image](URL_TO_YOUR_IMAGE)  
+![CaloriesScanner Web Image](https://imgur.com/a/wa5NPiv)  
 
 
 ---
