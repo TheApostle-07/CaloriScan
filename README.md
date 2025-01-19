@@ -56,5 +56,5 @@
 
 ### 1️⃣ Clone the Repository  
 ```bash  
-git clone https://github.com/yourusername/CaloriesScanner.git  
+git clone [https://github.com/TheApostle-07/CaloriScan.git]
 cd CaloriesScanner
