@@ -1,55 +1,55 @@
-# 🍽️ **CaloriScan**  
+# 🍴 CaloriesScanner  
 
-Welcome to **CaloriScan**, your go-to app for tracking calories and maintaining a healthy lifestyle!  
-Easily scan your dish's QR code, calculate its calorie count, and make informed dietary decisions.  
+**Track Calories, Nutrients, and Minerals Effortlessly with AI!**  
 
----
+![CaloriesScanner Web Image](URL_TO_YOUR_IMAGE)  
 
-## 🚀 **Features**  
-
-### 🔍 **Core Features**  
-- **QR Code Scanner**: Scan QR codes to get detailed calorie information for your dish.  
-- **Dynamic Calorie Calculation**: Modify ingredient quantities and see calorie totals update in real-time.  
-- **Daily Challenges**: Stay motivated with fun challenges like streaks and badges.  
-- **Calorie Breakdown**: View calorie values for each ingredient and the total calories of your dish.  
-
-### 💡 **Advanced Features**  
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.  
-- **Backend Integration**: Node.js and MongoDB-powered APIs for dish and ingredient management.  
-- **Gamification**: Keep track of your dietary achievements with badges and rewards.  
-- **Inventory Management**: Manage dishes and ingredient calorie values via APIs.  
+# 👩‍💻 Contributors
+### This project was created by:
+- **Rufus Bright** (Group Leader)
+- **Shivam Kumar Singh**
+- **Dubey Arpitkumar Shreesurendranath**
+- **Gulshan Nagar**
 
 ---
 
-## 🖼️ **Screenshots**  
+## 📖 About  
 
-### 📱 **Homepage**  
-![Homepage](https://via.placeholder.com/800x400)
-
-### 📲 **QR Code Scanner**  
-![QR Code Scanner](https://via.placeholder.com/800x400)
-
-### 📊 **Dynamic Calorie Breakdown**  
-![Dynamic Calorie Breakdown](https://via.placeholder.com/800x400)
+**CaloriesScanner** is an innovative web application that scans QR codes of food dishes and analyzes their calorie, nutrient, and mineral content. By integrating powerful technologies such as **Google Vision**, **Object Detection**, and **OpenAI API**, CaloriesScanner provides users with detailed insights into their food choices.  
 
 ---
 
-## 🛠️ **Tech Stack**  
+## ✨ Features  
 
-### 💻 **Frontend**  
-- **React.js**: Create dynamic and responsive user interfaces.  
-- **React Router**: Enable smooth navigation between pages.  
-- **CSS3 & HTML5**: Clean and modern design.
-
-### ⚙️ **Backend**  
-- **Node.js**: Fast and scalable server-side JavaScript.  
-- **Express.js**: Simplified backend logic and routing.  
-- **MongoDB**: Store dish and calorie data for seamless retrieval and updates.
+- **QR Code Scanning**: Instantly retrieve dish details by scanning QR codes.  
+- **Google Vision Integration**: Uses Google Vision API to detect and extract text and images from food labels and QR codes, ensuring accurate data retrieval.  
+- **Object Detection**: Identifies key ingredients in a dish and provides a breakdown of their nutritional content, all using advanced image processing and object recognition techniques.  
+- **OpenAI API**: Provides detailed insights about food items, such as nutrients, benefits, and possible allergens.  
+- **Dynamic Updates**: Modify ingredient quantities to recalculate calorie, protein, fat, and carb values in real-time.  
+- **Inventory Management**: Add, update, and delete dishes and ingredients using a simple CRUD interface.  
 
 ---
 
-## 📚 **Getting Started**
+## 🛠️ Tech Stack  
 
-### Prerequisites  
-- **Node.js**: Install the latest version from [Node.js Official Website](https://nodejs.org/).  
-- **MongoDB**: Use a local instance or connect to a cloud service like MongoDB Atlas.  
+- **Frontend**: React.js, Chart.js, Bootstrap  
+- **Backend**: Node.js, Express.js, MongoDB  
+- **APIs**:  
+  - Google Vision API for text and image recognition  
+  - OpenAI API for detailed food analysis and insights  
+  - Object Detection for ingredient identification  
+
+### Updates in This Version:
+1. **Web Image**: Add an image URL for a project banner or screenshot (`![CaloriesScanner Web Image](URL_TO_YOUR_IMAGE)`).
+2. **Deploy Link**: Added a placeholder for the live demo URL (`[CaloriesScanner - Live Demo](INSERT_YOUR_DEPLOY_LINK_HERE)`).
+
+
+
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Clone the Repository  
+```bash  
+git clone https://github.com/yourusername/CaloriesScanner.git  
+cd CaloriesScanner
