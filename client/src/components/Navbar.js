@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <h1>CaloriScan</h1>
+       <NavLink to="/">
+    <h1>CaloriScan</h1>
+  </NavLink>
         <button className="hamburger" onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
