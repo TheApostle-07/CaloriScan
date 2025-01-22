@@ -10,7 +10,7 @@
 ## 🌐 Live Demo  
 
 🎉 **Experience CaloriesScanner in action!** Click the link below to explore the live version of our project:  
-[🚀 **CaloriesScanner - Live Demo**](INSERT_YOUR_DEPLOY_LINK_HERE)  
+[🚀 **CaloriesScanner - Live Demo**]([INSERT_YOUR_DEPLOY_LINK_HERE](https://calori-scan-frontend.vercel.app/))  
 
 ---
 
