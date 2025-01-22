@@ -56,4 +56,35 @@
 ### 1️⃣ Clone the Repository  
 ```bash  
 git clone [https://github.com/TheApostle-07/CaloriScan.git]
-cd CaloriesScanner
+cd CaloriScan
+
+### 2️⃣ Install Dependencies
+
+#### For the Backend:
+1. Navigate to the backend directory:
+   ```bash
+   cd server
+2. Install the required dependencies:
+   ```bash
+   npm install
+
+#### For the Frontend:
+1.	Navigate to the frontend directory:
+   ```bash
+   cd client
+2.	Install the required dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+
+### 3️⃣ Set Up Environment Variables
+
+#### Backend Environment Variables
+Create a `.env` file in the `backend` directory and add the following keys:
+
+```plaintext
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+GOOGLE_API_KEY=your_google_vision_api_key
+OPENAI_API_KEY=your_openai_api_key
+
+Replace the placeholders (your_mongodb_connection_string, your_google_vision_api_key, your_openai_api_key) with your actual credentials.
