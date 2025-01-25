@@ -80,7 +80,7 @@ const QRScanner = () => {
   useEffect(() => {
     const fetchTokenStatus = async () => {
       const response = await axios.get("http://localhost:5002/api/token-status");
-      console.log(response.data.remainingTokens);
+      // console.log(response.data.remainingTokens);
       setRemainingTokens(response.data.remainingTokens);
     };
   
